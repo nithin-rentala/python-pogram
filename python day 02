@@ -1,0 +1,117 @@
+# #python day 03 tresure hunt 
+
+print("welcome to tresure island")
+print("your mission is to find trasure")
+first =  input('you are cross roads .where do you want to go type "right" or "left" ').lower()
+if first == "left":
+  second = input('you came to lake. there is a island in middle of the lake type "wait" for the boat.type "swim" to swim across').lower()
+  if second == "wait":
+    third = input('you are arrived to the island unharmed.there is a three doors.one red,one yello,one blue.which colour do you choose' ).lower()
+    if third == "yellow":
+      print("its a room of money .you won ")
+    elif third == "red" :
+      print("its a room of fire.game over")
+    else :
+      print("you loose the tresure. game over")
+  else:
+    print("you loose,game over")
+else:
+  print("you losse , game over")
+
+# day 03
+water_level = int(input("what is your water level\n"))
+if water_level <= 80:
+  print("dont stop run the water")
+else:
+  print("drain the water")
+
+print("welcome to rollercoaster")
+height = int(input("what is your height in cm\n"))
+bill = 0
+if height >= 120:
+  print("you can ride the rollercoaster.have a nice day")
+  age = int(input("what is your age"))
+  if age < 12:
+    bill = 5
+    print("your bill is $5")
+   
+  elif age <= 18:
+    bill = 7
+    print("your bill $7")
+    
+  else:
+    bill  = 12
+    print("your bill is $12")
+  photo = input ('do you wanna take a photo type Y or N ')
+  if photo == "Y":
+    bill += 3
+  print(f"your final bill is{bill}")
+      
+else:
+  print("you have to grow taller before going to ride a coaster")
+
+odd and even
+num = int(input("what is the number you want to check\n"))
+if num % 2 == 0:
+  print("it is a even number")
+else:
+  print("it is a odd number")
+
+# bmi 2.0
+
+height = float(input("what is your height in m: \n"))
+weight = float(input("what is your weight in kg: \n"))
+result_1 = weight / height**2
+result = round(result_1,1)
+if result < 18.5:
+  print(f"your bmi is {result},you are under weight ")
+elif result < 25:
+  print(f"your bmi is {result},you have a normal weight")
+elif result < 30:
+  print(f"your bmi is {result},you are over weight")
+elif result < 35:
+  print(f"your bmi is {result},you are obese")
+else:
+  print(f"your bmi is {result},you are clinically obese")
+
+# leap year project 
+
+year = int(input("which year do you want to check"))
+if year % 4 == 0:
+  if year % 100 == 0:
+    if year % 400 == 0:
+      print("leap year")
+    else:
+      print("not a leap year")
+  else:
+    print("leap year")
+else:
+  print("not a leap year")
+
+# pizza delivery practice
+
+print("welcome to pizza delivery")
+pizza = input("what size pizza do you want? S,M,L ")
+add_pepper = input("do you want to add pepper type Y or N")
+add_cheese = input("do you want to add cheese type Y or N")
+bill = 0
+if pizza == "S":
+  bill += 15
+elif pizza == "M":
+  bill += 20
+elif pizza == "L":
+  bill += 25
+
+
+  
+if add_pepper == "Y":
+  if pizza == "L":
+    bill +=3
+  else:
+    bill += 2
+
+
+if add_cheese == "Y":
+  bill += 1
+
+print(f"your total bill is {bill}")
