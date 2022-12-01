@@ -1,0 +1,63 @@
+#day 01
+print("welcome to band name generator\n")
+name = input("what is the name of the city you grow up\n")
+pet = input("what is your lovely pet name\n")
+print("your band name is" + "  "  + name + " " + pet)
+print("some thing")
+print('some thing')
+print("some thing is" + "going wrong")
+print('print("what to print in replet")')
+print("Day 01 - python print function")
+print("the function is declered like this")
+print("hellonithin\nhellonithin\nhellonithin\nhellonithin")
+print("hello " + " " + "nithin rentala")
+print(" hello nithin")
+print("         hello nithin rentala")
+input("what is name")
+print(len(input("what is name")))
+name = input("what is name")
+length = len(name)
+print(f"your name has {length} characters")
+age = input("what is your age") 
+a = input("a:")
+b = input("b:")
+c = a
+a = b 
+b = c
+print("a: " + a)
+print("b: " + b)
+user_name = input("what is emal id")
+print("your user id " + user_name + "is not strong")
+#day 02
+
+
+
+# #sub scripting
+
+print("hello world"[3])
+# print(float(1236.33,1))
+num = input("what is your two digit number")
+first = num[0]
+second = num[1]
+result = int(first) + int(second)
+print(result)
+# pemdas rule in mathematical operations         left to right
+
+print("welcome to bmi calculator")
+height = float(input("what is your height in m :  "))
+weight = int(input("what is your weight in kg : "))
+result_1 = weight/height**2
+result = int(result_1)
+print(f"your bmi is {result}") 
+score = 25
+score += 10
+print(score)
+
+projecct
+age = input("what si your current age")
+integer = int(age)
+years_remaining = 90 - integer
+days_remaining = years_remaining * 365
+weeks_remaining = years_remaining * 52
+months_remaining = years_remaining * 12
+print(f"you have {days_remaining} days, {weeks_remaining} weeks, {months_remaining}left")
