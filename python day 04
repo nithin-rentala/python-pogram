@@ -1,0 +1,42 @@
+#python-day-04
+import random
+num = random.randint(1,6)
+print(num)
+num_1 = random.random()
+number = round(num_1,2)
+print(number)
+
+# #heads and tails
+game = random.randint(1,2)
+if game == 1:
+  print("heads")
+else:
+  print("tails")
+
+#python lists
+states_names = ["andhra pradesh","telangana","tamilnadu","kerala","punjab","madhya pradesh"]
+print(states_names)
+print(states_names[0])
+print(states_names[-2])
+states_names[3] = "keralayia"
+print(states_names)
+states_names.append("nithin land")
+print(states_names)
+states_names.extend(["nithin land","mother land","father land"])
+print(states_names)
+
+# project person who will buy the meal
+import random
+names = input("give me the namesof your friends.seperated by a commas.")
+names_1 = names.split(", ")
+names_2 = len(names_1)
+# names_3 = random.randint(0 , names_2 - 1)
+# names_4 = names[names_3]
+names_4 = names.choice(names)
+print(names_4 + "is going to buy meal today")
+
+#nested lists
+fruits = ["banana","apple","kiwi","grapes"]
+vegetables = ["carrot","cucumber","tamota","chilli"]
+all = [fruits,vegetables]
+print(all)
