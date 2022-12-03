@@ -1,0 +1,71 @@
+# python all days
+#  day 04
+# randomaization
+
+
+import random
+num = random.randint(1,100)
+print(num)
+number = random.random()
+number_2 = number*5
+number_1 = round(number_2,2)
+print(number_1)
+
+float = random.randint(0,1)
+if float == 0:
+  print("heads")
+else:
+  print("tails")
+
+love_score = random.randint(1,100)
+print(f"your love is {love_score},you are alright toghter")
+
+# lists
+
+states_india = ["andhra pradesh","telangana","kerala","tamilnadu","punjab","madya pradesh","karnataka"]
+print(states_india)
+print(states_india[0])
+print(states_india[-2])
+states_india[0] = "andra pradeshi"
+print(states_india)
+states_india.append("nithin land")
+print(states_india)
+states_india.extend(["mother land","father land","sister land"])
+print(states_india)
+
+# project who will buy the meal
+
+import random
+names = input("give me your list of names,seperated by a commas").split(",")
+                                         # names_2 = random.choice(names)
+names_1 = len(names)
+random_choice = random.randint(0,names_1 -1)
+names_2 = names[random_choice]
+print(f"{names_2} is gonna buy the meal today")
+
+
+fruits = ["banana","apple","kiwi"]
+vegetables = ["tamota","spinach","potatos"]
+all = [fruits,vegetables]
+print(all)
+
+# project tresure map
+
+
+row1 = ["□","□","□"]
+row2 = ["□","□","□"]
+row3 = ["□","□","□"]
+map = [row1,row2,row3]
+print(f"{row1}\n{row2}\n{row3}\n")
+position = input("where do you want to put the treaure")
+
+horizantal  = int(position[0])
+vertical = int(position[1])
+
+# selected_row = map[vertical-1]
+# selected_row[horizantal-1] = "X"
+
+map[vertical-1][horizantal-1] = "X"
+
+map = [row1,row2,row3]
+print(f"{row1}\n{row2}\n{row3}\n")
